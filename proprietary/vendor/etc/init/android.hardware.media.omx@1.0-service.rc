@@ -1,4 +1,5 @@
 service vendor.media.omx /vendor/bin/hw/android.hardware.media.omx@1.0-service
+    setenv LD_PRELOAD /vendor/lib/libui_compat_shim.so
     class main
     user mediacodec
     group camera drmrpc mediadrm
