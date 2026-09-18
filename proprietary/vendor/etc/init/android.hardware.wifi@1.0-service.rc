@@ -5,6 +5,12 @@ service vendor.wifi_hal_legacy /vendor/bin/hw/android.hardware.wifi@1.0-service
     interface android.hardware.wifi@1.3::IWifi default
     interface android.hardware.wifi@1.4::IWifi default
     class hal
+    # IWifi@1.4 ist nicht im VINTF-Manifest deklariert -> registerAsService()
+    # scheitert mit UNKNOWN_ERROR und der Service crasht im Loop. Unter
+    # Android 14 konsumiert kein Client das HIDL-IWifi (WiFi laeuft ueber
+    # ISehWifi + wpa_supplicant/AIDL). disabled verhindert den Autostart;
+    # bei Bedarf manuell startbar.
+    disabled
     capabilities NET_ADMIN NET_RAW SYS_MODULE
     user wifi
     group wifi gps
