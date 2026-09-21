@@ -637,7 +637,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm7225-common/proprietary/vendor/lib/libalsautils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libalsautils.so \
     vendor/samsung/sm7225-common/proprietary/vendor/lib/libapex_cmn.so:$(TARGET_COPY_OUT_VENDOR)/lib/libapex_cmn.so \
     vendor/samsung/sm7225-common/proprietary/vendor/lib/libapex_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libapex_utils.so \
-    vendor/samsung/sm7225-common/proprietary/vendor/lib/libapexsupport.so:$(TARGET_COPY_OUT_VENDOR)/lib/libapexsupport.so \
     vendor/samsung/sm7225-common/proprietary/vendor/lib/libarcsoft_multi_frame_video_hdr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarcsoft_multi_frame_video_hdr.so \
     vendor/samsung/sm7225-common/proprietary/vendor/lib/libarcsoft_object_tracking.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarcsoft_object_tracking.so \
     vendor/samsung/sm7225-common/proprietary/vendor/lib/libarcsoft_picportrait_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarcsoft_picportrait_video.so \
@@ -979,7 +978,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm7225-common/proprietary/vendor/lib/libvideobeauty_interface.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvideobeauty_interface.so \
     vendor/samsung/sm7225-common/proprietary/vendor/lib/libvideoutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvideoutils.so \
     vendor/samsung/sm7225-common/proprietary/vendor/lib/libvndfwk_detect_jni.qti.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvndfwk_detect_jni.qti.so \
-    vendor/samsung/sm7225-common/proprietary/vendor/lib/libvndksupport.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvndksupport.so \
     vendor/samsung/sm7225-common/proprietary/vendor/lib/libvorbisidec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvorbisidec.so \
     vendor/samsung/sm7225-common/proprietary/vendor/lib/libvppclient.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvppclient.so \
     vendor/samsung/sm7225-common/proprietary/vendor/lib/libvpphcp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvpphcp.so \
@@ -1356,7 +1354,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm7225-common/proprietary/vendor/lib64/libadsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libadsprpc.so \
     vendor/samsung/sm7225-common/proprietary/vendor/lib64/libaivideocentral.arcsoft.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaivideocentral.arcsoft.so \
     vendor/samsung/sm7225-common/proprietary/vendor/lib64/libalsautils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libalsautils.so \
-    vendor/samsung/sm7225-common/proprietary/vendor/lib64/libapexsupport.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libapexsupport.so \
     vendor/samsung/sm7225-common/proprietary/vendor/lib64/libarcsoft_multi_frame_video_hdr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_multi_frame_video_hdr.so \
     vendor/samsung/sm7225-common/proprietary/vendor/lib64/libarcsoft_object_tracking.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_object_tracking.so \
     vendor/samsung/sm7225-common/proprietary/vendor/lib64/libarcsoft_picportrait_video.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_picportrait_video.so \
@@ -1712,7 +1709,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm7225-common/proprietary/vendor/lib64/libvkmanager_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvkmanager_vendor.so \
     vendor/samsung/sm7225-common/proprietary/vendor/lib64/libvkservice.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvkservice.so \
     vendor/samsung/sm7225-common/proprietary/vendor/lib64/libvndfwk_detect_jni.qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvndfwk_detect_jni.qti.so \
-    vendor/samsung/sm7225-common/proprietary/vendor/lib64/libvndksupport.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvndksupport.so \
     vendor/samsung/sm7225-common/proprietary/vendor/lib64/libvppclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvppclient.so \
     vendor/samsung/sm7225-common/proprietary/vendor/lib64/libvpphcp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvpphcp.so \
     vendor/samsung/sm7225-common/proprietary/vendor/lib64/libvpphvx.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvpphvx.so \
