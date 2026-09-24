@@ -1,5 +1,6 @@
 service vendor.samsung.hardware.hyper-default /vendor/bin/hw/vendor.samsung.hardware.hyper-service
     class hal
+    disabled
     user system
     group system
 
