@@ -499,31 +499,8 @@ PRODUCT_PACKAGES += \
     libHDRVerifier_v1.camera.samsung \
     libHandGesture.camera.samsung \
     libHprVisualEffect \
-    libI420colorconvert \
     libLocalTM_capture_core.camera.samsung \
     libLocalTM_wrapper.camera.samsung \
-    libMpeg4SwEncoder \
-    libMpeghSwEnc \
-    libOmxAacDec \
-    libOmxAacEnc \
-    libOmxAlacDec \
-    libOmxAlacDecSw \
-    libOmxAmrDec \
-    libOmxAmrEnc \
-    libOmxAmrwbplusDec \
-    libOmxApeDec \
-    libOmxApeDecSw \
-    libOmxEvrcDec \
-    libOmxEvrcEnc \
-    libOmxG711Dec \
-    libOmxG711Enc \
-    libOmxMpeghEncSw \
-    libOmxQcelp13Dec \
-    libOmxQcelp13Enc \
-    libOmxSwVdec \
-    libOmxSwVencMpeg4 \
-    libOmxVpp \
-    libOmxWmaDec \
     libOpenCL \
     libOpenCv.camera.samsung \
     libQSEEComAPI \
@@ -658,8 +635,6 @@ PRODUCT_PACKAGES += \
     libmdsprpc \
     libminkdescriptor \
     libminksocket \
-    libmm-color-convertor \
-    libmm-hdcpmgr \
     libmmcamera_faceproc \
     libmmcamera_faceproc2 \
     libmmosal \
@@ -905,16 +880,12 @@ PRODUCT_PACKAGES += \
     vintf-codecsolution-V2-ndk_platform \
     audio.primary.lito \
     sound_trigger.primary.lito \
-    libFrucSSMLib \
-    libOmxDsdDec \
-    libOmxMpeghDecSw \
     lib_SamsungRec_07010 \
     lib_SoundAlive_SRC384_ver320 \
     lib_soundaliveresampler \
     liba2dpoffload \
     libadm \
     libadpcmdec \
-    libapex_cmn \
     libapex_utils \
     libaudio_log_utils \
     libaudio_soundtrigger \
@@ -929,7 +900,6 @@ PRODUCT_PACKAGES += \
     libhdmiedid \
     libhdmipassthru_vendor \
     libhfp \
-    libpredeflicker_native \
     librecordalive \
     libsamsungVoipResampler \
     libsmwrapper \
