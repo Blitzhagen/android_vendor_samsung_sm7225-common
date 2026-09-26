@@ -11211,23 +11211,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libstagefright_omx_vendor",
-	owner: "samsung",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libstagefright_omx_vendor.so"],
-			shared_libs: ["libapex_cmn", "libFrucSSMLib", "libpredeflicker_native", "libbase", "libbinder", "libmedia_omx", "libutils", "liblog", "libui", "libcutils", "libstagefright_foundation_vendor", "libstagefright_bufferqueue_helper_vendor", "libstagefright_xmlparser", "libhidlbase", "libhidlmemory", "libvndksupport", "android.hardware.media.omx@1.0", "android.hardware.graphics.bufferqueue@1.0", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "32",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libstreamparser",
 	owner: "samsung",
 	strip: {
@@ -13911,24 +13894,6 @@ cc_prebuilt_binary {
 		},
 	},
 	compile_multilib: "64",
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	relative_install_path: "hw",
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "android.hardware.media.omx@1.0-service",
-	owner: "samsung",
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/bin/hw/android.hardware.media.omx@1.0-service"],
-			shared_libs: ["libbinder", "libutils", "liblog", "libbase", "libavservices_minijail", "libcutils", "libhidlbase", "libstagefright_xmlparser", "android.hardware.media.omx@1.0", "libstagefright_omx_vendor", "android.hidl.memory@1.0", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "32",
 	strip: {
 		none: true,
 	},
