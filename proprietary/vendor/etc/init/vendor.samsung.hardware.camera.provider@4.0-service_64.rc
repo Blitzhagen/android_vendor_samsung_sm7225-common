@@ -1,6 +1,5 @@
 service sec-camera-provider-4-0 /vendor/bin/hw/vendor.samsung.hardware.camera.provider@4.0-service_64
     setenv LD_PRELOAD /vendor/lib64/libui_compat_shim.so
-    interface vendor.samsung.hardware.camera.provider@4.0::ISehCameraProvider legacy/0
     interface android.hardware.camera.provider@2.6::ICameraProvider legacy/0
     interface android.hardware.camera.provider@2.5::ICameraProvider legacy/0
     interface android.hardware.camera.provider@2.4::ICameraProvider legacy/0
