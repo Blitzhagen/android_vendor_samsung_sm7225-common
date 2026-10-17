@@ -27,7 +27,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm7225-common/proprietary/vendor/bin/hw/macloader:$(TARGET_COPY_OUT_VENDOR)/bin/hw/macloader \
     vendor/samsung/sm7225-common/proprietary/vendor/bin/hw/mfgloader:$(TARGET_COPY_OUT_VENDOR)/bin/hw/mfgloader \
     vendor/samsung/sm7225-common/proprietary/vendor/bin/hw/rild:$(TARGET_COPY_OUT_VENDOR)/bin/hw/rild \
-    vendor/samsung/sm7225-common/proprietary/vendor/bin/hw/samsung.software.media.c2@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/samsung.software.media.c2@1.0-service \
     vendor/samsung/sm7225-common/proprietary/vendor/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service \
     vendor/samsung/sm7225-common/proprietary/vendor/bin/hw/vendor.qti.hardware.iop@2.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.iop@2.0-service \
     vendor/samsung/sm7225-common/proprietary/vendor/bin/hw/vendor.qti.hardware.perf@2.2-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.perf@2.2-service \
@@ -190,7 +189,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm7225-common/proprietary/vendor/etc/init/qmipriod.debug.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qmipriod.debug.rc \
     vendor/samsung/sm7225-common/proprietary/vendor/etc/init/qmipriod.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qmipriod.rc \
     vendor/samsung/sm7225-common/proprietary/vendor/etc/init/qseecomd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qseecomd.rc \
-    vendor/samsung/sm7225-common/proprietary/vendor/etc/init/samsung.software.media.c2@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/samsung.software.media.c2@1.0-service.rc \
     vendor/samsung/sm7225-common/proprietary/vendor/etc/init/shsusrd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/shsusrd.rc \
     vendor/samsung/sm7225-common/proprietary/vendor/etc/init/snaplite_utility.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/snaplite_utility.rc \
     vendor/samsung/sm7225-common/proprietary/vendor/etc/init/ssgtzd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ssgtzd.rc \
@@ -307,8 +305,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm7225-common/proprietary/vendor/etc/seccomp_policy/mediaextractor_sec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediaextractor_sec.policy \
     vendor/samsung/sm7225-common/proprietary/vendor/etc/seccomp_policy/qspm.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qspm.policy \
     vendor/samsung/sm7225-common/proprietary/vendor/etc/seccomp_policy/qti-systemd.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qti-systemd.policy \
-    vendor/samsung/sm7225-common/proprietary/vendor/etc/seccomp_policy/samsung.software.media.c2-base-policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/samsung.software.media.c2-base-policy \
-    vendor/samsung/sm7225-common/proprietary/vendor/etc/seccomp_policy/samsung.software.media.c2-ext-policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/samsung.software.media.c2-ext-policy \
     vendor/samsung/sm7225-common/proprietary/vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/vendor.qti.hardware.dsp.policy \
     vendor/samsung/sm7225-common/proprietary/vendor/etc/sensors/config/atoll_default_sensors.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/atoll_default_sensors.json \
     vendor/samsung/sm7225-common/proprietary/vendor/etc/sensors/config/atoll_lsm6dso_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/atoll_lsm6dso_0.json \
@@ -517,7 +513,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libskeymaster4device \
     android.hardware.audio.common@6.0-util_vendor \
-    android.hardware.gatekeeper@1.0-impl_vendor \
     btaudio_offload_if \
     com.qti.eeprom.sec2qcconversion \
     com.samsung.sensor.gc5035 \
@@ -1101,22 +1096,9 @@ PRODUCT_PACKAGES += \
     gatekeeper.mdfpp \
     libDLInterface.camera.samsung \
     libSNPE \
-    libSecC2ComponentStore \
     libSemDataProps \
     libSemTelephonyProps \
     libc++_shared \
-    libcodec2_sec_aacdec \
-    libcodec2_sec_aacenc \
-    libcodec2_sec_amrnbdec \
-    libcodec2_sec_amrwbdec \
-    libcodec2_sec_flacdec \
-    libcodec2_sec_imadec \
-    libcodec2_sec_mp3dec \
-    libcodec2_sec_mp4vdec \
-    libcodec2_sec_soft_common \
-    libcodec2_sec_vc1dec \
-    libcodec2_soft_ac4dec \
-    libcodec2_soft_eac3dec \
     libdeccfg \
     libdk_vnd_service_core \
     libdsms_vendor \
