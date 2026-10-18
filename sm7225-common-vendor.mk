@@ -494,7 +494,6 @@ PRODUCT_PACKAGES += \
     engmode_manifest.xml \
     hyper-default-sec.xml \
     manifest_android.hardware.drm@1.3-service.widevine.xml \
-    sec_c2_manifest_default.xml \
     vaultkeeper_manifest.xml \
     vendor.samsung.hardware.authfw@1.0-manifest.xml \
     vendor.samsung.hardware.hqm@1.0-manifest.xml \
