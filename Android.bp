@@ -1796,6 +1796,24 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+	name: "audio.primary.lito",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/hw/audio.primary.lito.so"],
+		},
+	},
+	compile_multilib: "32",
+	relative_install_path: "hw",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
 	name: "audio.sec_primary.default",
 	owner: "samsung",
 	strip: {

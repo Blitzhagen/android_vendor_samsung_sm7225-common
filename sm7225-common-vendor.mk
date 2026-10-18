@@ -585,6 +585,7 @@ PRODUCT_PACKAGES += \
     android.hardware.soundtrigger@2.3-impl_vendor \
     audio.a2dpsink.default \
     audio.bluetooth_qti.default \
+    audio.primary.lito \
     audio.sec_primary.default \
     audio.usb.default_vendor \
     camera.qcom \
