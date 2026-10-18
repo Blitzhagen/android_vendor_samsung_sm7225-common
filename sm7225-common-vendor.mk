@@ -6,6 +6,12 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/samsung/sm7225-common
 
 PRODUCT_COPY_FILES += \
+    vendor/samsung/sm7225-common/proprietary/vendor/lib/hw/audio.primary.lito.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.primary.lito.so \
+    vendor/samsung/sm7225-common/proprietary/vendor/lib64/camera.device@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera.device@1.0-impl.so \
+    vendor/samsung/sm7225-common/proprietary/vendor/lib64/camera.device@3.2-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera.device@3.2-impl.so \
+    vendor/samsung/sm7225-common/proprietary/vendor/lib64/camera.device@3.3-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera.device@3.3-impl.so \
+    vendor/samsung/sm7225-common/proprietary/vendor/lib64/camera.device@3.4-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera.device@3.4-impl.so \
+    vendor/samsung/sm7225-common/proprietary/vendor/lib64/camera.device@3.5-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera.device@3.5-impl.so \
     vendor/samsung/sm7225-common/proprietary/vendor/bin/adpl:$(TARGET_COPY_OUT_VENDOR)/bin/adpl \
     vendor/samsung/sm7225-common/proprietary/vendor/bin/adsprpcd:$(TARGET_COPY_OUT_VENDOR)/bin/adsprpcd \
     vendor/samsung/sm7225-common/proprietary/vendor/bin/argosd:$(TARGET_COPY_OUT_VENDOR)/bin/argosd \
@@ -511,7 +517,7 @@ PRODUCT_PACKAGES += \
 # Prebuilt libraries generated from proprietary-files.txt
 PRODUCT_PACKAGES += \
     libskeymaster4device \
-    android.hardware.audio.common@6.0-util_vendor \
+    android.hardware.audio.common@6.0-util \
     btaudio_offload_if \
     com.qti.eeprom.sec2qcconversion \
     com.samsung.sensor.gc5035 \
@@ -576,17 +582,16 @@ PRODUCT_PACKAGES += \
     libGLESv2_adreno \
     libq3dtools_adreno \
     libq3dtools_esx \
-    android.hardware.audio.effect@6.0-impl_vendor \
-    android.hardware.audio@6.0-impl_vendor \
+    android.hardware.audio.effect@6.0-impl \
+    android.hardware.audio@6.0-impl \
     android.hardware.bluetooth@1.0-impl-qti \
     android.hardware.gnss@2.1-impl-qti_vendor \
-    android.hardware.soundtrigger@2.0-impl_vendor \
-    android.hardware.soundtrigger@2.3-impl_vendor \
+    android.hardware.soundtrigger@2.0-impl \
+    android.hardware.soundtrigger@2.3-impl \
     audio.a2dpsink.default \
     audio.bluetooth_qti.default \
-    audio.primary.lito \
     audio.sec_primary.default \
-    audio.usb.default_vendor \
+    audio.usb.default \
     camera.qcom \
     camera.unihal.default \
     com.qti.chi.override \
@@ -632,7 +637,6 @@ PRODUCT_PACKAGES += \
     libOmxAmrwbplusDec \
     libOmxApeDec \
     libOmxApeDecSw \
-    libOmxCore_vendor \
     libOmxDsdDec \
     libOmxEvrcDec \
     libOmxEvrcEnc \
@@ -642,8 +646,6 @@ PRODUCT_PACKAGES += \
     libOmxMpeghEncSw \
     libOmxQcelp13Dec \
     libOmxQcelp13Enc \
-    libOmxVdec_vendor \
-    libOmxVenc_vendor \
     libOmxVpp \
     libOmxWmaDec \
     libOpenCL_vendor \
@@ -661,7 +663,7 @@ PRODUCT_PACKAGES += \
     lib_SoundAlive_play_plus_ver400 \
     lib_SoundBooster_ver1050 \
     lib_soundaliveresampler \
-    liba2dpoffload_vendor \
+    liba2dpoffload \
     libacdb-fts \
     libacdbloader \
     libacdbrtac \
@@ -688,7 +690,7 @@ PRODUCT_PACKAGES += \
     libautotracking_interface \
     libbase64 \
     libbatching_vendor \
-    libbatterylistener_vendor \
+    libbatterylistener \
     libbitmlengine \
     libbluetooth_a2dpsink_session \
     libbluetooth_audio_session_qti \
@@ -697,7 +699,6 @@ PRODUCT_PACKAGES += \
     libbthost_if \
     libbtnv \
     libc2d30_bltlib \
-    libc2dcolorconvert_vendor \
     libcacertclient \
     libcamera_nn_stub \
     libcamerapostproc \
@@ -719,14 +720,14 @@ PRODUCT_PACKAGES += \
     libcdsp_default_listener \
     libcdsprpc \
     libchilog \
-    libcirrusspkrprot_vendor \
+    libcirrusspkrprot \
     libcneoplookup \
     libcneqmiutils \
-    libcodec2_simple_component_vendor \
-    libcodec2_soft_common_vendor \
+    libcodec2_simple_component \
+    libcodec2_soft_common \
     libcodecsolutionhelper_vendor \
     libcom.qti.chinodeutils \
-    libcomprcapture_vendor \
+    libcomprcapture \
     libconfigdb \
     libcpion \
     libcppf \
@@ -746,7 +747,7 @@ PRODUCT_PACKAGES += \
     libengine_did \
     libevent_finder.uniplugin@1.0 \
     libexifa.camera.samsung \
-    libexthwplugin_vendor \
+    libexthwplugin \
     libfastcrc \
     libfastcvdsp_stub \
     libfastcvopt \
@@ -764,17 +765,17 @@ PRODUCT_PACKAGES += \
     libgnsspps \
     libgps.utils_vendor \
     libgpudataproducer \
-    libgrallocusage_vendor \
+    libgrallocusage \
     libgsl \
     libhand_interaction.uniplugin@1.0 \
     libhandgesture.arcsoft \
     libhdcp1prov \
     libhdcp2p2prov \
     libhdcpsrm \
-    libhdmiedid_vendor \
+    libhdmiedid \
     libhdr_tm \
     libheifcapture \
-    libhfp_vendor \
+    libhfp \
     libhqm_hwparam \
     libhta_hexagon_runtime \
     libhypermotion_core \
@@ -789,7 +790,7 @@ PRODUCT_PACKAGES += \
     libjnihelper \
     libjpegQtable_interface \
     libjpegencoder_sw.unifunc \
-    libjson_vendor \
+    libjson \
     liblbs_core \
     libllvm-glnext \
     libllvm-qcom \
@@ -830,7 +831,6 @@ PRODUCT_PACKAGES += \
     libperfgluelayer \
     libperfioctl \
     libperipheral_client \
-    libplatformconfig_vendor \
     libpredeflicker_native \
     libprofileparamstorage \
     libpvr \
@@ -898,7 +898,6 @@ PRODUCT_PACKAGES += \
     libsehbluetooth_audio_session \
     libsemnativecarrierfeature \
     libsensorlistener \
-    libsensorndkbridge_vendor \
     libsensorslog \
     libshotsuggestion \
     libshotsuggestion_engines \
@@ -911,7 +910,7 @@ PRODUCT_PACKAGES += \
     libsnamrnb \
     libsnamrwb \
     libsnap_vndk \
-    libsndmonitor_vendor \
+    libsndmonitor \
     libsns_device_mode_stub \
     libsns_fastRPC_util \
     libsns_low_lat_stream_stub \
@@ -923,7 +922,7 @@ PRODUCT_PACKAGES += \
     libsocial_image_enhancement.uniplugin@1.0 \
     libspatializerparamstorage \
     libspeakercalibration \
-    libspkrprot_vendor \
+    libspkrprot \
     libssc \
     libssc_default_listener \
     libssd \
@@ -969,8 +968,8 @@ PRODUCT_PACKAGES += \
     libvpplibrary \
     libvpptestutils \
     libwebrtc_audio_preprocessing \
-    libwfdaac_vendor_vendor \
-    libwpa_client_vendor \
+    libwfdaac_vendor \
+    libwpa_client \
     libwpa_drv_oem \
     libwvhidl \
     libxml \
@@ -1002,7 +1001,6 @@ PRODUCT_PACKAGES += \
     libqcbassboost \
     libqcreverb \
     libqcvirt \
-    libsamsungSoundbooster_plus \
     libshoebox \
     libswdap \
     libswspatializer \
@@ -1032,7 +1030,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.bluetooth_sar@1.0 \
     vendor.qti.hardware.bluetooth_sar@1.1 \
     vendor.qti.hardware.cacert@1.0 \
-    vendor.qti.hardware.capabilityconfigstore@1.0_vendor \
     vendor.qti.hardware.camera.postproc@1.0-service-impl \
     vendor.qti.hardware.cvp@1.0 \
     vendor.qti.hardware.data.connection@1.0 \
@@ -1080,11 +1077,6 @@ PRODUCT_PACKAGES += \
     vendor.samsung.hardware.tlc.ucm@2.0-impl \
     vendor.samsung.hardware.tlc.ucm@2.0 \
     vintf-codecsolution-V2-ndk_platform \
-    camera.device@1.0-impl_vendor \
-    camera.device@3.2-impl_vendor \
-    camera.device@3.3-impl_vendor \
-    camera.device@3.4-impl_vendor \
-    camera.device@3.5-impl_vendor \
     com.qti.stats.aec \
     com.qti.stats.af \
     com.qti.stats.awb \
@@ -1179,6 +1171,3 @@ PRODUCT_PACKAGES += \
     vendor.samsung.hardware.wifi@2.1 \
     vendor.samsung.hardware.wifi@2.2 \
     vendor.samsung.hardware.wifi@2.3 \
-    vendor.qti.hardware.display.mapper@1.0_vendor \
-    vendor.qti.hardware.display.mapper@1.1_vendor \
-    vendor.qti.hardware.display.mapper@2.0_vendor
