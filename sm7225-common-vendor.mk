@@ -1103,6 +1103,7 @@ PRODUCT_PACKAGES += \
     libhta \
     libhyper_vendor \
     libhypervintf \
+    libjsoncpp_stock \
     libkeymaster_helper \
     liblearningmodule \
     libloadalgo_stub \

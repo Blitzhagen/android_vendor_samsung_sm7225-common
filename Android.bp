@@ -13651,6 +13651,35 @@ cc_prebuilt_library_shared {
 	soc_specific: true,
 }
 
+// Stock jsoncpp keeps Value::null in .data (precomputed); the source-built
+// libjsoncpp constructs it at runtime in .bss, and symbol interposition with
+// libhyper.so's own embedded jsoncpp copy then writes into libhyper's
+// already-RELRO'd .data.rel.ro -> SIGSEGV in _GLOBAL__sub_I_json_value.cpp.
+cc_prebuilt_library_shared {
+	name: "libjsoncpp_stock",
+	stem: "libjsoncpp_stock",
+	owner: "samsung",
+	strip: {
+		none: true,
+	}
+,
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libjsoncpp.so"],
+		}
+,
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libjsoncpp.so"],
+		}
+,
+	}
+,
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
 cc_prebuilt_library_shared {
 	name: "libhypervintf",
 	owner: "samsung",
