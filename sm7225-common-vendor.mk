@@ -898,6 +898,7 @@ PRODUCT_PACKAGES += \
     libsehbluetooth_audio_session \
     libsemnativecarrierfeature \
     libsensorlistener \
+    libsensorndkbridge \
     libsensorslog \
     libshotsuggestion \
     libshotsuggestion_engines \
