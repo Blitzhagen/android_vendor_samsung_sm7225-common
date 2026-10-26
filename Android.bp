@@ -77,15 +77,6 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "android.hardware.dumpstate@1.1-service-lazy.xml",
-	owner: "samsung",
-	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.dumpstate@1.1-service-lazy.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-prebuilt_etc_xml {
 	name: "android.hardware.gnss@2.1-service-qti.xml",
 	owner: "samsung",
 	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.gnss@2.1-service-qti.xml",
