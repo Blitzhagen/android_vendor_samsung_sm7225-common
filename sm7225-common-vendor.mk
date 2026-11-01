@@ -568,7 +568,6 @@ PRODUCT_PACKAGES += \
     libq3dtools_adreno \
     libq3dtools_esx \
     android.hardware.audio.effect@6.0-impl \
-    android.hardware.audio@6.0-impl \
     android.hardware.bluetooth@1.0-impl-qti \
     android.hardware.gnss@2.1-impl-qti_vendor \
     android.hardware.soundtrigger@2.0-impl \
